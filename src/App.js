@@ -1,20 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
 import { Box } from './components/Box/';
 import { GlobalStyle } from './constants/globals';
+import { Home } from './pages/Home';
+import { Favorites } from './pages/Favorites';
 
 export const App = () => {
+  console.log('azazaz');
   return (
     <>
       <GlobalStyle />
-      <Box
-        bg="background"
-        p="4"
-        height="100vh"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <h1>hi thereeeeeeeeee</h1>
-      </Box>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favorites" element={<Favorites />} />
+      </Routes>
     </>
   );
 };
