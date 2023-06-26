@@ -13,7 +13,7 @@ export const App = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <h1>hi there</h1>
+        <h1>hi thereeeeeeeeee</h1>
       </Box>
     </>
   );
