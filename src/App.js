@@ -3,6 +3,7 @@ import { GlobalStyle } from './constants/globals';
 import { Home } from './pages/Home';
 import { Favorites } from './pages/Favorites';
 import { NotFound } from './pages/NotFound';
+import { Box } from './components/Box';
 
 export const App = () => {
   console.log('azazaz');
