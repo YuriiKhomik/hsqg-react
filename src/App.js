@@ -2,19 +2,19 @@ import { Routes, Route } from 'react-router-dom';
 import { GlobalStyle } from './constants/globals';
 import { Home } from './pages/Home';
 import { Favorites } from './pages/Favorites';
-import { NotFound } from './pages/NotFound';
+import { NotFound } from './pages/NotFound/';
 import { Box } from './components/Box';
 
 export const App = () => {
   console.log('azazaz');
   return (
-    <>
+    <Box p="15px">
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </Box>
   );
 };
