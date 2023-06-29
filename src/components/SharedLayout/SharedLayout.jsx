@@ -5,8 +5,7 @@ import donutImage2 from 'images/donut2.png';
 import { Box } from 'components/Box';
 import { Burger } from 'components/Burger';
 import { Menu } from 'components/Navigation';
-import { Donut } from 'pages/Home/Home.styled';
-import { Donut2 } from 'pages/Home/Home.styled';
+import { Donut, Donut2 } from 'components/Donut';
 
 export const SharedLayout = () => {
   const [open, setOpen] = useState(false);

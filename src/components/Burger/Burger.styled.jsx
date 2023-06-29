@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
   position: fixed;
-  top: 5%;
-  left: 5%;
+  top: 2%;
+  right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -35,7 +35,7 @@ export const StyledBurger = styled.button`
     :nth-child(2) {
       opacity: ${({ open }) => (open ? '0' : '1')};
       transform: ${({ open }) =>
-        open ? 'translateX(20px)' : 'translateX(0)'};
+        open ? 'translateX(-20px)' : 'translateX(0)'};
     }
 
     :nth-child(3) {
