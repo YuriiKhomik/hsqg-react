@@ -19,30 +19,54 @@ export const StyledMenu = styled.nav`
     width: 100%;
   }
 
-  a {
-    text-transform: uppercase;
-    padding: 16px 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: red;
-    text-decoration: none;
-    transition: color 0.3s linear;
+  // a {
+  //
+  //   padding: 16px 0;
+  //   font-weight: bold;
+  //   letter-spacing: 0.5rem;
+  //   color: red;
+  //   text-decoration: none;
+  //   transition: color 0.3s linear;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
+  //   @media (max-width: ${breakpoints.tablet}) {
+  //     font-size: 1.5rem;
+  //     text-align: center;
+  //   }
 
-    &:hover {
-      color: cyan;
-    }
-  }
+  //   &:hover {
+  //     color: cyan;
+  //   }
+  // }
 `;
 
 export const StyledLink = styled(NavLink)`
-  color: red;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: ${p => p.theme.colors.white};
+
+  -webkit-text-fill-color: ${p => p.theme.colors.white};
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: ${p => p.theme.colors.black};
+  -webkit-text-stroke: 0.7px ${p => p.theme.colors.black};
+  text-fill-color: ${p => p.theme.colors.white};
+  text-stroke-width: 0.7px;
+  text-stroke-color: ${p => p.theme.colors.black};
+
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  min-height: 30px;
+  min-width: 200px;
+  border: 4px solid ${p => p.theme.colors.black};
+  border-radius: ${p => p.theme.space[4]}px;
+  background-color: ${p => p.theme.colors.pink};
 
   &.active {
-    color: pink;
+    background-color: ${p => p.theme.colors.blue};
+  }
+
+  &:hover {
+    background-color: ${p => p.theme.colors.blue};
   }
 `;

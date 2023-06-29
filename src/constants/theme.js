@@ -2,11 +2,11 @@ export const theme = Object.freeze({
   colors: {
     text: '#000',
     background: '#ffc0cb3d',
-    $blue: '#70D1FE',
-    $yellow: '#FED90F',
-    $black: '#424F46',
-    $white: '#ffffff',
-    $pink: '#FF81C1',
+    blue: '#70D1FE',
+    yellow: '#FED90F',
+    black: '#424F46',
+    white: '#fff',
+    pink: '#FF81C1',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
