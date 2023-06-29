@@ -9,7 +9,7 @@ import { ThemeProvider } from 'styled-components';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/hsqg-react">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
@@ -17,4 +17,5 @@ root.render(
   </React.StrictMode>
 );
 
+// add this to BrowserRouter before deploy on GitHub Pages:
 // basename="/hsqg-react"
