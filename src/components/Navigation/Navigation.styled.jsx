@@ -1,15 +1,14 @@
 import { breakpoints } from 'constants/variables';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: blue;
-  opacity: 0.5;
+  backdrop-filter: blur(10px);
   height: 100vh;
   text-align: left;
-  padding: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,9 +20,8 @@ export const StyledMenu = styled.nav`
   }
 
   a {
-    font-size: 2rem;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 16px 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: red;
@@ -38,5 +36,13 @@ export const StyledMenu = styled.nav`
     &:hover {
       color: cyan;
     }
+  }
+`;
+
+export const StyledLink = styled(NavLink)`
+  color: red;
+
+  &.active {
+    color: pink;
   }
 `;
