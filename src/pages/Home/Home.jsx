@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Box } from 'components/Box';
 import { Donut, Donut2, HomeContainer } from './Home.styled';
 import donutImage from 'images/donut.png';
 import donutImage2 from 'images/donut2.png';
+import { Burger } from 'components/Burger';
+import { Menu } from 'components/Navigation';
+import { useOnClickOutside } from 'hooks/hooks';
 
-export const Home = () => {
+export const Home = ({ open, setOpen }) => {
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
     <Box display="flex" justifyContent="center">
+      <Box ref={node}>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </Box>
       <Donut src={donutImage} />
       <Donut2 src={donutImage2} />
       <HomeContainer>
