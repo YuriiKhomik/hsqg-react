@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hsqg-react/static/css/main.4bfbe31b.css",
-    "main.js": "/hsqg-react/static/js/main.fd4c02e7.js",
+    "main.js": "/hsqg-react/static/js/main.705e950b.js",
     "static/media/donut2.png": "/hsqg-react/static/media/donut2.95ac425abcf47d21947f.png",
     "static/media/donut.png": "/hsqg-react/static/media/donut.e06b9c6605296aed191e.png",
     "index.html": "/hsqg-react/index.html",
     "main.4bfbe31b.css.map": "/hsqg-react/static/css/main.4bfbe31b.css.map",
-    "main.fd4c02e7.js.map": "/hsqg-react/static/js/main.fd4c02e7.js.map"
+    "main.705e950b.js.map": "/hsqg-react/static/js/main.705e950b.js.map"
   },
   "entrypoints": [
     "static/css/main.4bfbe31b.css",
-    "static/js/main.fd4c02e7.js"
+    "static/js/main.705e950b.js"
   ]
 }
