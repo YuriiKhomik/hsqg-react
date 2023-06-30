@@ -1,16 +1,11 @@
 import { StyledQuoteField, StyledQuote } from './QuoteField.styled';
 
-export const QuoteField = () => {
+export const QuoteField = ({ quote }) => {
   return (
     <StyledQuoteField>
-      <StyledQuote>
-        Stupidity got us into this mess, and stupidity will get us out.
-        Stupidity got us into this mess, and stupidity will get us out.
-        Stupidity got us into this mess, and stupidity will get us out.
-        Stupidity got us into this mess, and stupidity will get us out.
-        Stupidity got us into this mess, and stupidity will get us out.
-        Stupidity got us into this mess, and stupidity will get us out.
-      </StyledQuote>
+      {/* <Box padding="15px"> */}
+      <StyledQuote>{quote}</StyledQuote>
+      {/* </Box> */}
     </StyledQuoteField>
   );
 };

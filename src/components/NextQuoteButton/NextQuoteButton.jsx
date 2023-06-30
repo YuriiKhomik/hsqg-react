@@ -1,5 +1,9 @@
 import { StyledNQButton } from './NextQuoteButton.styled';
 
-export const NextQuoteButton = () => {
-  return <StyledNQButton>NEXT QUOTE</StyledNQButton>;
+export const NextQuoteButton = ({ onClick }) => {
+  return (
+    <StyledNQButton type="button" onClick={onClick}>
+      NEXT QUOTE
+    </StyledNQButton>
+  );
 };

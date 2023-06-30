@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledQuoteField = styled.div`
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 100%;
   height: 210px;
   background-color: ${p => p.theme.colors.white};
