@@ -3,6 +3,7 @@ import { Box } from 'components/Box';
 import { HomeContainer } from './Home.styled';
 import { Hero } from 'components/Hero';
 import { QuoteField } from 'components/QuoteField';
+import { NextQuoteButton } from 'components/NextQuoteButton';
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <HomeContainer>
         <Hero />
         <QuoteField />
+        <NextQuoteButton />
       </HomeContainer>
     </Box>
   );

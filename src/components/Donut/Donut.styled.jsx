@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints } from 'constants/variables';
 
-export const Donut = styled.img`
+export const DonutBottom = styled.img`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -16,11 +16,11 @@ export const Donut = styled.img`
   }
 `;
 
-export const Donut2 = styled.img`
+export const DonutTop = styled.img`
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(40%, -40%) rotate(90deg);
+  transform: translate(37%, -40%) rotate(90deg);
   z-index: -1;
   width: 300px;
   @media (min-width: ${breakpoints.tablet}) {
