@@ -1,5 +1,9 @@
-import { StyledNav } from './Header.styled';
+import { StyledLink, StyledNav } from './Header.styled';
 
 export const Header = () => {
-  return <StyledNav></StyledNav>;
+  return (
+    <StyledNav>
+      <StyledLink to="/">Home</StyledLink>
+    </StyledNav>
+  );
 };

@@ -18,25 +18,6 @@ export const StyledMenu = styled.nav`
   @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
   }
-
-  // a {
-  //
-  //   padding: 16px 0;
-  //   font-weight: bold;
-  //   letter-spacing: 0.5rem;
-  //   color: red;
-  //   text-decoration: none;
-  //   transition: color 0.3s linear;
-
-  //   @media (max-width: ${breakpoints.tablet}) {
-  //     font-size: 1.5rem;
-  //     text-align: center;
-  //   }
-
-  //   &:hover {
-  //     color: cyan;
-  //   }
-  // }
 `;
 
 export const StyledLink = styled(NavLink)`
