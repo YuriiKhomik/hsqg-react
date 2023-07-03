@@ -13,14 +13,27 @@ export const StyledNav = styled.nav`
 
 export const StyledLink = styled(NavLink)`
   font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
+  font-size: 16px;
 
-  width: 
+  min-width: 100px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 20px;
+
+  background-color: ${p => p.theme.colors.blue};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: ${p => p.theme.colors.white};
 
   &.active {
-    background-color: ${p => p.theme.colors.blue};
+    background-color: ${p => p.theme.colors.pink};
   }
+  &:hover {
+    color: ${p => p.theme.colors.yellow};
+    background-color: ${p => p.theme.colors.pink};
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 `;
