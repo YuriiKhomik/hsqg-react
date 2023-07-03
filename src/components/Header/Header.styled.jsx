@@ -4,7 +4,8 @@ import styled from 'styled-components';
 export const StyledNav = styled.nav`
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  justify-content: space-between;
+  padding: 20px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,7 +21,6 @@ export const StyledLink = styled(NavLink)`
   border: 3px solid black;
   border-radius: 10px;
   padding: 8px;
-  margin-left: 20px;
 
   background-color: ${p => p.theme.colors.blue};
 
@@ -36,4 +36,11 @@ export const StyledLink = styled(NavLink)`
     color: ${p => p.theme.colors.yellow};
     background-color: ${p => p.theme.colors.pink};
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+  &:last-child {
+    margin-right: 120px;
+  }
 `;
