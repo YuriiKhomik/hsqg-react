@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from 'constants/variables';
 
 export const StyledHero = styled.div`
   width: 100%;
@@ -15,17 +16,11 @@ export const StyledHero = styled.div`
   text-align: center;
   padding: 15px;
   margin-bottom: 70px;
-`;
 
-// export const Title = styled.h1`
-//   -webkit-text-fill-color: ${p => p.theme.colors.white};
-//   -webkit-text-stroke-width: 0.7px;
-//   -webkit-text-stroke-color: ${p => p.theme.colors.black};
-//   -webkit-text-stroke: 0.7px ${p => p.theme.colors.black};
-//   text-fill-color: ${p => p.theme.colors.white};
-//   text-stroke-width: 0.7px;
-//   text-stroke-color: ${p => p.theme.colors.black};
-// `;
+  @media screen and (min-width: ${breakpoints.tablet}) {
+    height: 200px;
+  }
+`;
 
 export const Title = styled.h1`
   color: ${p => p.theme.colors.white};

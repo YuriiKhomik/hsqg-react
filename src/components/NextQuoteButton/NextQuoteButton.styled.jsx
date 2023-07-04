@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from 'constants/variables';
 
 export const StyledNQButton = styled.button`
   min-width: 150px;
@@ -13,5 +14,11 @@ export const StyledNQButton = styled.button`
   &:hover {
     background-color: ${p => p.theme.colors.pink};
     color: ${p => p.theme.colors.yellow};
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) {
+    min-width: 200px;
+    min-height: 70px;
+    font-size: 18px;
   }
 `;

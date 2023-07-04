@@ -15,7 +15,7 @@ export const Home = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="center">
+    <Box className="homeWrapper" display="flex" justifyContent="center">
       <HomeContainer>
         <Hero />
         <QuoteField quote={quote} />

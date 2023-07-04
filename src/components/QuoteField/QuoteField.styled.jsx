@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from 'constants/variables';
 
 export const StyledQuoteField = styled.div`
   overflow-y: auto;
@@ -16,6 +17,10 @@ export const StyledQuoteField = styled.div`
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
+
+  @media screen and (min-width: ${breakpoints.tablet}) {
+    height: 250px;
+  }
 `;
 
 export const StyledQuote = styled.p`
