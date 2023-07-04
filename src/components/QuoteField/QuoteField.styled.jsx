@@ -15,7 +15,7 @@ export const StyledQuoteField = styled.div`
   justify-content: center;
   text-align: center;
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 export const StyledQuote = styled.p`

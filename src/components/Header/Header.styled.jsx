@@ -13,11 +13,11 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLink = styled(NavLink)`
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 15px;
 
-  min-width: 100px;
-  height: 40px;
+  min-width: 80px;
+  height: 32px;
   border: 3px solid black;
   border-radius: 10px;
   padding: 8px;

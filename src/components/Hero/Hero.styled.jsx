@@ -14,7 +14,7 @@ export const StyledHero = styled.div`
   align-items: center;
   text-align: center;
   padding: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 `;
 
 export const Title = styled.h1`

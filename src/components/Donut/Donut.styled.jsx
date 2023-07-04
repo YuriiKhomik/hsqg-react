@@ -7,7 +7,7 @@ export const DonutBottom = styled.img`
   left: 0;
   transform: translate(-50%, 50%);
   z-index: -1;
-  width: 400px;
+  width: 300px;
   @media (min-width: ${breakpoints.tablet}) {
     width: 200px;
   }
@@ -20,9 +20,9 @@ export const DonutTop = styled.img`
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(37%, -40%) rotate(90deg);
+  transform: translate(35%, -39%) rotate(90deg);
   z-index: -1;
-  width: 300px;
+  width: 250px;
   @media (min-width: ${breakpoints.tablet}) {
     width: 200px;
   }
