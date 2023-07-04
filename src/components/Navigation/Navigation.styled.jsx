@@ -7,7 +7,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(10px);
-  height: 100vh;
+  height: 100%;
   text-align: left;
   position: absolute;
   top: 0;

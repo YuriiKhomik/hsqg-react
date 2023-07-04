@@ -10,8 +10,7 @@ export const StyledNQButton = styled.button`
   background-color: ${p => p.theme.colors.blue};
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: ${p => p.theme.colors.pink};
     color: ${p => p.theme.colors.yellow};
   }

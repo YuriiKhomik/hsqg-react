@@ -17,12 +17,20 @@ export const StyledHero = styled.div`
   margin-bottom: 70px;
 `;
 
+// export const Title = styled.h1`
+//   -webkit-text-fill-color: ${p => p.theme.colors.white};
+//   -webkit-text-stroke-width: 0.7px;
+//   -webkit-text-stroke-color: ${p => p.theme.colors.black};
+//   -webkit-text-stroke: 0.7px ${p => p.theme.colors.black};
+//   text-fill-color: ${p => p.theme.colors.white};
+//   text-stroke-width: 0.7px;
+//   text-stroke-color: ${p => p.theme.colors.black};
+// `;
+
 export const Title = styled.h1`
-  -webkit-text-fill-color: ${p => p.theme.colors.white};
-  -webkit-text-stroke-width: 0.7px;
-  -webkit-text-stroke-color: ${p => p.theme.colors.black};
-  -webkit-text-stroke: 0.7px ${p => p.theme.colors.black};
-  text-fill-color: ${p => p.theme.colors.white};
-  text-stroke-width: 0.7px;
-  text-stroke-color: ${p => p.theme.colors.black};
+  color: ${p => p.theme.colors.white};
+  text-shadow: 0.7px 0px ${p => p.theme.colors.black},
+    0px 0.7px ${p => p.theme.colors.black},
+    -0.7px 0px ${p => p.theme.colors.black},
+    0px -0.7px ${p => p.theme.colors.black};
 `;

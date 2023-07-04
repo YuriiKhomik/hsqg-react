@@ -10,6 +10,10 @@ export const StyledNav = styled.nav`
   top: 0;
   width: 100%;
   height: 60px;
+
+  background-color: rgb(255 217 15 / 80%);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -39,8 +43,5 @@ export const StyledLink = styled(NavLink)`
   }
   &:not(:first-child) {
     margin-left: 20px;
-  }
-  &:last-child {
-    margin-right: 120px;
   }
 `;
