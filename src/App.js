@@ -8,7 +8,7 @@ import { Box } from './components/Box';
 
 export const App = () => {
   return (
-    <Box>
+    <Box className="appWrapper">
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<SharedLayout />}>

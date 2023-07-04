@@ -17,15 +17,15 @@ export const SharedLayout = () => {
       <MediaQuery minWidth={769}>
         <Header />
       </MediaQuery>
-      <Box p="15px">
-        <Box>
+      <Box className="sharedLayoutWrapper" p="15px">
+        <Box className="mobileNavWrapper">
           <MediaQuery maxWidth={768}>
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </MediaQuery>
         </Box>
-        <DonutBottom src={donutImage} />
-        <DonutTop src={donutImage2} />
+        {/* <DonutBottom src={donutImage} />
+        <DonutTop src={donutImage2} /> */}
         <Outlet />
       </Box>
     </>

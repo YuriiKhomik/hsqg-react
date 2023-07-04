@@ -20,7 +20,7 @@ export const DonutTop = styled.img`
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(35%, -39%) rotate(90deg);
+  transform: translate(34%, -39%) rotate(90deg);
   z-index: -1;
   width: 250px;
   @media (min-width: ${breakpoints.tablet}) {
