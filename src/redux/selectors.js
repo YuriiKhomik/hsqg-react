@@ -1,1 +1,1 @@
-export const getAllQuotes = state => state.quotes;
+export const getAllQuotes = state => state.quotes.quotes;

@@ -1,15 +1,8 @@
-import { createStore } from 'redux';
-import { devToolsEnhancer } from '@redux-devtools/extension';
-import data from '../data/quotes.json';
+import { configureStore } from '@reduxjs/toolkit';
+import { quotesReducer } from './quotesSlice';
 
-const initialState = {
-  quotes: data,
-};
-
-const rootReducer = (state = initialState, action) => {
-  return state;
-};
-
-const enhancer = devToolsEnhancer();
-
-export const store = createStore(rootReducer, enhancer);
+export const store = configureStore({
+  reducer: {
+    quotes: quotesReducer,
+  },
+});
