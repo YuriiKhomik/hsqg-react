@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Box } from 'components/Box';
 import { HomeContainer } from './Home.styled';
 import { Hero } from 'components/Hero';
 import { QuoteField } from 'components/QuoteField';
 import { NextQuoteButton } from 'components/NextQuoteButton';
-import data from '../../data/quotes.json';
+import { randomIndex } from 'utils';
+import { getAllQuotes } from 'redux/selectors';
 
 export const Home = () => {
-  const [quote, setQuote] = useState(data[1].quote);
+  const data = useSelector(getAllQuotes);
+
+  const [quote, setQuote] = useState(data[randomIndex(data)].quote);
 
   const handleClick = () => {
-    const randomQuote = Math.floor(Math.random() * data.length);
-    setQuote(data[randomQuote].quote);
+    setQuote(data[randomIndex(data)].quote);
   };
 
   return (
